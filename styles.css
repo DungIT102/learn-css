@@ -156,14 +156,13 @@ section {
 
 /* navigation */
 header {
-  position: relative;
   padding: var(--spacer) 0;
-  z-index: 1000;
 }
 
 @media (min-width: 40em) {
   header {
     position: sticky;
+    z-index: 1000;
     top: 0;
   }
 }

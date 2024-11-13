@@ -140,8 +140,6 @@ section {
 .member {
   --ord: 1;
   --pad: 0.5rem 2rem 0.5rem 0.5rem;
-  --mr: 1rem;
-  --ml: 0;
   --dir: right;
 
   margin: 1rem;
@@ -151,6 +149,7 @@ section {
 
   flex: 1 1 45%;
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: var(--dir);
 
@@ -160,18 +159,13 @@ section {
 
 .member__image {
   width: 10rem;
-  margin-right: var(--mr);
-  margin-left: var(--ml);
-  border-radius: 0.25rem;
-
   order: var(--ord);
+  border-radius: 0.25rem;
 }
 
 .member--mirrored {
   --ord: 0;
   --pad: 0.5rem 0.5rem 0.5rem 2rem;
-  --mr: 0;
-  --ml: 1rem;
   --dir: left;
 }
 

@@ -3,182 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Our stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>Magic is in the air</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Content vs Layout</title>
   </head>
+
   <body>
-    <header class="bg-dark">
-      <div class="container">
-        <nav class="primary-nav">
-          <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Testimonials</a></li>
-          </ul>
-        </nav>
+    <section class="section-one bg-dark">
+      <div class="container split">
+        <div class="flow-content">
+          <h1>Justo, tristique turpis diam mattis odio</h1>
+          <p>
+            Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
+            aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
+            in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus
+            ornare facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
+          </p>
+        </div>
+        <div class="flow-content">
+          <p>
+            Sagittis cras odio gravida magna posuere dignissim congue ac, integer a pulvinar aliquam
+            egestas id enim, leo amet nibh mi turpis suspendisse ornare duis vulputate aenean arcu
+            id nec tempus suspendisse odio rhoncus neque, volutpat et tellus ipsum a aenean at in
+            eget leo non morbi morbi enim vitae volutpat.
+          </p>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="split-gap a-center">
-            <div class="gap gap--large">
-              <h1 class="section-title">Start learning magic today</h1>
-              <p class="h2 page-heading">
-                Books hard to follow, and YouTube letting you down?
-                <span>Learn magic the right way.</span>
-              </p>
-              <p>
-                Lorem ipsum dolor sit <a href="#">amet, consectetur adipiscing</a> elit. Donec
-                placerat, ipsum ac auctor ornare, nunc ligula scelerisque eros.
-              </p>
-              <a href="#" class="btn">Start learning</a>
-            </div>
-            <div><img src="assets/hero.jpg" alt="image hero" class="shadow" /></div>
+    </section>
+
+    <section class="section-two">
+      <div class="container flow-content">
+        <h2>Justo, tristique turpis diam mattis odio</h2>
+        <h3>Justo, tristique turpis</h3>
+        <p>
+          Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
+          aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
+          in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus ornare
+          facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
+        </p>
+      </div>
+    </section>
+
+    <section class="section-three bg-dark">
+      <div class="container split">
+        <h2>Tristique turpis</h2>
+        <p>
+          Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
+          aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
+          in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus ornare
+          facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
+        </p>
+        <p>
+          Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
+          aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
+          in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus ornare
+          facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
+        </p>
+      </div>
+    </section>
+
+    <section class="section-four">
+      <div class="container flow-content">
+        <h2>Justo, tristique turpis diam mattis odio</h2>
+        <div class="split">
+          <div class="card">
+            <h3>Team Plan O1</h3>
+            <p>
+              Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
+              aliquam amet egestas non leo pellentesque a.
+            </p>
+            <a href="#" class="btn">Buy now</a>
+          </div>
+          <div class="card">
+            <h3>Team Plan O2</h3>
+            <p>
+              Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
+              aliquam amet egestas non leo pellentesque a.
+            </p>
+            <a href="#" class="btn">Buy now</a>
           </div>
         </div>
-      </section>
-
-      <section class="bg-dark">
-        <div class="container">
-          <h2 class="text-accent">Start mastering magic today</h2>
-          <ul class="split-gap">
-            <li class="gap">
-              <img src="assets/feature-01.jpg" alt="dice falling into a hand" />
-              <h3>Feeling stuck?</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </li>
-            <li class="gap">
-              <img src="assets/feature-02.jpg" alt="cards spread on a table" />
-              <h3>Stop with the excuses</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </li>
-            <li class="gap">
-              <img src="assets/feature-03.jpg" alt="man riffling cards" />
-              <h3>Unlock your potential</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </li>
-            <li class="gap">
-              <img src="assets/feature-04.jpg" alt="teenager doing cardestry" />
-              <h3>Get in the game</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="join-now">
-        <div class="container">
-          <h2>Join now and get access to our entire library of tricks</h2>
-          <ul class="split-gap">
-            <li class="gap corner-square">
-              <img
-                class="shadow"
-                src="assets/all-access-03.jpg"
-                alt="man with cards flying in front of him"
-              />
-              <h3>Step-by-step instruction</h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-            <li class="gap corner-square">
-              <img
-                class="shadow"
-                src="assets/all-access-04.jpg"
-                alt="woman and man talking over video conference"
-              />
-              <h3>1-on-1 mentoring</h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-            <li class="gap corner-square">
-              <img
-                class="shadow"
-                src="assets/all-access-01.jpg"
-                alt="man in front of laptop with earphonese on"
-              />
-              <h3>Video lessons</h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-            <li class="gap corner-square">
-              <img
-                class="shadow"
-                src="assets/all-access-02.jpg"
-                alt="close up of hands holding cards"
-              />
-              <h3>Full routines</h3>
-              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="cta bg-accent">
-        <div class="container gap gap--large">
-          <h2 class="section-title">Start learning magic today</h2>
-          <p class="h2">You’re only one step away</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ipsum ac auctor
-            ornare.
-          </p>
-          <a href="#" class="btn">Start Learning</a>
-        </div>
-      </section>
-
-      <section class="testimonials">
-        <div class="container gap gap--large">
-          <h2 class="section-title">Testimonials</h2>
-          <p class="h2">Others have done it, so can you!</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ipsum ac auctor
-            ornare, nunc ligula scelerisque eros.
-          </p>
-          <div class="split-gap">
-            <div class="testimonial bg-dark corner-square">
-              <p>
-                Commodo risus non cursus risus, metus, velit scelerisque urna, aenean leo diam arcu
-                sed arcu purus sagittis posuere orci ornare lorem risus malesuada nec sit
-              </p>
-              <p class="name">John Smith</p>
-              <p class="position">CEO of Company</p>
-            </div>
-            <div class="testimonial bg-accent corner-square">
-              <p>
-                Commodo risus non cursus risus, metus, velit scelerisque urna, aenean leo diam arcu
-                sed arcu purus sagittis posuere orci ornare lorem risus malesuada nec sit
-              </p>
-              <p class="name">John Smith</p>
-              <p class="position">CEO of Company</p>
-            </div>
-            <div class="testimonial bg-dark corner-square">
-              <p>
-                Commodo risus non cursus risus, metus, velit scelerisque urna, aenean leo diam arcu
-                sed arcu purus sagittis posuere orci ornare lorem risus malesuada nec sit
-              </p>
-              <p class="name">John Smith</p>
-              <p class="position">CEO of Company</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta bg-light">
-        <div class="container gap gap--large">
-          <h2 class="section-title">Start learning magic today</h2>
-          <p class="h2">You’re only one step away</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, ipsum ac auctor
-            ornare.
-          </p>
-          <a href="#" class="btn">Start Learning</a>
-        </div>
-        <!-- /container -->
-      </section>
-    </main>
+      </div>
+    </section>
   </body>
 </html>

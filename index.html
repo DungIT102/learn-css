@@ -3,91 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>acme website co.</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@200&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Content vs Layout</title>
   </head>
+  <body class="page-home">
+    <header class="primary-header">
+      <div class="primary-header__inner">
+        <a href="index.html" aria-label="acme home page">
+          <img src="img/logo.svg" alt="icon logo" class="logo" />
+        </a>
+        <nav class="primary-nav">
+          <ul class="primary-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <body>
-    <section class="section-one bg-dark">
-      <div class="container split">
+    <!-- Intro text-serif -->
+    <section class="intro text-serif">
+      <div class="container flow-content">
+        <h1 class="page-title">Lorem ipsum dolor sit amet, consectet adipiscing</h1>
+        <p class="page-intro">
+          Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna.
+        </p>
+        <a href="#" class="btn">Connect</a>
+      </div>
+    </section>
+
+    <!-- about text-500 text-serif -->
+    <section class="about text-500 text-serif">
+      <div class="container">
+        <header>
+          <h2 class="section-title">About</h2>
+        </header>
         <div class="flow-content">
-          <h1>Justo, tristique turpis diam mattis odio</h1>
           <p>
-            Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
-            aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
-            in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus
-            ornare facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
+            Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore dolore magna sed do amet.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna. Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
           </p>
         </div>
-        <div class="flow-content">
-          <p>
-            Sagittis cras odio gravida magna posuere dignissim congue ac, integer a pulvinar aliquam
-            egestas id enim, leo amet nibh mi turpis suspendisse ornare duis vulputate aenean arcu
-            id nec tempus suspendisse odio rhoncus neque, volutpat et tellus ipsum a aenean at in
-            eget leo non morbi morbi enim vitae volutpat.
-          </p>
+      </div>
+    </section>
+
+    <!-- recent-articles bg-primary-300 -->
+    <section class="recent-articles bg-primary-300">
+      <div class="container">
+        <header>
+          <h2 class="section-title">Blog</h2>
+          <p class="section-subtitle">Latest thoughts, news and ideas</p>
+        </header>
+        <div class="split xl-space">
+          <article class="article-preview flow-content">
+            <img src="img/blog-1.jpg" alt="electric drill" />
+            <h3>Lorem ipsum dolor sit amet, consectet adipiscing</h3>
+            <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
+
+            <div class="info">
+              <time datetime="2020-10-08">Oct 8</time>
+              <p>8 min read</p>
+            </div>
+          </article>
+
+          <article class="article-preview flow-content">
+            <img src="img/blog-2.jpg" alt="cactus" />
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
+            <div class="info">
+              <time datetime="2020-10-08">Oct 8</time>
+              <p>8 min read</p>
+            </div>
+          </article>
+
+          <article class="article-preview flow-content">
+            <img src="img/blog-3.jpg" alt="insulated water bottle" />
+            <h3>Lorem ipsum dolor sit amet, consectet adipiscing</h3>
+            <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
+            <div class="info">
+              <time datetime="2020-10-08">Oct 8</time>
+              <p>8 min read</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section-two">
-      <div class="container flow-content">
-        <h2>Justo, tristique turpis diam mattis odio</h2>
-        <h3>Justo, tristique turpis</h3>
-        <p>
-          Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
-          aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
-          in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus ornare
-          facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
-        </p>
-      </div>
-    </section>
-
-    <section class="section-three bg-dark">
-      <div class="container split">
-        <h2>Tristique turpis</h2>
-        <p>
-          Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
-          aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
-          in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus ornare
-          facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
-        </p>
-        <p>
-          Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
-          aliquam amet egestas non leo pellentesque a suspendisse in ipsum orci tempor molestie et
-          in consequat, at lectus congue sit quis risus morbi phasellus id lectus duis cursus ornare
-          facilisi euismod sit nulla ut consequat nisl orci aliquam ultricies
-        </p>
-      </div>
-    </section>
-
-    <section class="section-four">
-      <div class="container flow-content">
-        <h2>Justo, tristique turpis diam mattis odio</h2>
-        <div class="split">
-          <div class="card">
-            <h3>Team Plan O1</h3>
-            <p>
-              Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
-              aliquam amet egestas non leo pellentesque a.
-            </p>
-            <a href="#" class="btn">Buy now</a>
+    <!-- call-to-action -->
+    <section class="call-to-action">
+      <div class="container">
+        <header>
+          <h2 class="section-title">Inbox</h2>
+          <p class="section-subtitle">Knowledge letters</p>
+        </header>
+        <img src="img/newsletter.jpg" alt="floating items" class="xl-space" />
+        <form action="" method="post" class="newsletter">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" />
           </div>
-          <div class="card">
-            <h3>Team Plan O2</h3>
-            <p>
-              Egestas euismod faucibus massa natoque arcu morbi faucibus lectus amet massa ultricies
-              aliquam amet egestas non leo pellentesque a.
-            </p>
-            <a href="#" class="btn">Buy now</a>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" />
+          </div>
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- primary-footer -->
+    <footer class="primary-footer">
+      <div class="container">
+        <div class="primary-footer__inner split">
+          <a href="index.html" class="logo" aria-label="acme home page">
+            <img src="img/logo.svg" alt="icon logo" />
+          </a>
+
+          <div class="footer-nav">
+            <dl class="flow-content">
+              <dt class="text-serif">Map</dt>
+              <dd><a href="#">Blog</a></dd>
+              <dd><a href="#">Privacy</a></dd>
+            </dl>
+
+            <dl class="flow-content">
+              <dt class="text-serif">Resources</dt>
+              <dd><a href="#">Courses</a></dd>
+              <dd><a href="#">Hacks</a></dd>
+              <dd><a href="#">Free stuff</a></dd>
+            </dl>
           </div>
         </div>
+        <div class="split text-serif">
+          <p class="copywrite">&copy; 2020 Acme. All rights reserved</p>
+          <ul class="footer-social">
+            <li><a href="#">Yt</a></li>
+            <li><a href="#">Tw</a></li>
+            <li><a href="#">Fb</a></li>
+            <li><a href="# ">Li</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

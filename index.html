@@ -3,163 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>acme website co.</title>
+    <title>CSS Demystified | Challenge #1</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="page-home">
-    <header class="primary-header">
-      <div class="primary-header__inner">
-        <a href="index.html" aria-label="acme home page">
-          <img src="img/logo.svg" alt="icon logo" class="logo" />
-        </a>
-        <nav class="primary-nav">
-          <ul class="primary-nav__list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <!-- Intro text-serif -->
-    <section class="intro text-serif">
-      <div class="container flow-content">
-        <h1 class="page-title">Lorem ipsum dolor sit amet, consectet adipiscing</h1>
-        <p class="page-intro">
-          Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna.
+  <body>
+    <main>
+      <div class="container">
+        <h1>Great product. Great features.</h1>
+        <p class="subtitle">
+          We have a lot of faith that our product is what you need to achieve all of your goals.
+          Below are only our favorite features, but it can do much, much more!
         </p>
-        <a href="#" class="btn">Connect</a>
-      </div>
-    </section>
-
-    <!-- about text-500 text-serif -->
-    <section class="about text-500 text-serif">
-      <div class="container">
-        <header>
-          <h2 class="section-title">About</h2>
-        </header>
-        <div class="flow-content">
-          <p>
-            Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore dolore magna sed do amet.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna. Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- recent-articles bg-primary-300 -->
-    <section class="recent-articles bg-primary-300">
-      <div class="container">
-        <header>
-          <h2 class="section-title">Blog</h2>
-          <p class="section-subtitle">Latest thoughts, news and ideas</p>
-        </header>
-        <div class="split xl-space">
-          <article class="article-preview flow-content">
-            <a href="#" class="flow-content">
-              <img src="img/blog-1.jpg" alt="electric drill" />
-              <h3>Lorem ipsum dolor sit amet, consectet adipiscing</h3>
-              <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-            </a>
-
-            <div class="info">
-              <time datetime="2020-10-08">Oct 8</time>
-              <p>8 min read</p>
-            </div>
-          </article>
-
-          <article class="article-preview flow-content">
-            <a href="#" class="flow-content">
-              <img src="img/blog-2.jpg" alt="cactus" />
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-            </a>
-            <div class="info">
-              <time datetime="2020-10-08">Oct 8</time>
-              <p>8 min read</p>
-            </div>
-          </article>
-
-          <article class="article-preview flow-content">
-            <a href="#" class="flow-content">
-              <img src="img/blog-3.jpg" alt="insulated water bottle" />
-              <h3>Lorem ipsum dolor sit amet, consectet adipiscing</h3>
-              <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-            </a>
-            <div class="info">
-              <time datetime="2020-10-08">Oct 8</time>
-              <p>8 min read</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- call-to-action -->
-    <section class="call-to-action">
-      <div class="container">
-        <header>
-          <h2 class="section-title">Inbox</h2>
-          <p class="section-subtitle">Knowledge letters</p>
-        </header>
-        <img src="img/newsletter.jpg" alt="floating items" class="xl-space" />
-        <form action="" method="post" class="newsletter">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" />
+        <div class="cards">
+          <!-- card #1 -->
+          <div class="card">
+            <h2 class="bg-green">Fast</h2>
+            <p>
+              Quis placerat aliquam blandit integer morbi tristique interdum morbi sed at lectus et
+              in urna
+            </p>
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@domain.com" />
+
+          <!-- card #2 -->
+          <div class="card">
+            <h2 class="bg-purple">Affordable</h2>
+            <p>
+              Malesuada nec dignissim aliquet lectus enim, viverra diam, porttitor sit tempus
+              egestas non nibh commodo eget maecenas augue
+            </p>
           </div>
-          <button class="btn">Subscribe</button>
-        </form>
-      </div>
-    </section>
 
-    <!-- primary-footer -->
-    <footer class="primary-footer">
-      <div class="container">
-        <div class="primary-footer__inner split">
-          <a href="index.html" class="logo" aria-label="acme home page">
-            <img src="img/logo.svg" alt="icon logo" />
-          </a>
+          <!-- card #3 -->
+          <div class="card">
+            <h2 class="bg-orange">Reliable</h2>
+            <p>
+              Ut vestibulum egestas ornare scelerisque ac, nunc, nunc amet nec augue tempus, urna
+              eleifend ultrices vel eu massa
+            </p>
+          </div>
 
-          <div class="footer-nav">
-            <dl class="flow-content">
-              <dt class="text-serif">Map</dt>
-              <dd><a href="#">Blog</a></dd>
-              <dd><a href="#">Privacy</a></dd>
-            </dl>
+          <!-- card #4 -->
+          <div class="card">
+            <h2 class="bg-pink">Simple</h2>
+            <p>
+              Sed sed neque, adipiscing scelerisque maecenas eu eros accumsan, sollicitudin
+              convallis feugiat congue euismod proin libero, tristique justo
+            </p>
+          </div>
 
-            <dl class="flow-content">
-              <dt class="text-serif">Resources</dt>
-              <dd><a href="#">Courses</a></dd>
-              <dd><a href="#">Hacks</a></dd>
-              <dd><a href="#">Free stuff</a></dd>
-            </dl>
+          <!-- card #5 -->
+          <div class="card">
+            <h2 class="bg-blue">Robust</h2>
+            <p>
+              Sem nulla diam nascetur sed leo magna interdum arcu nulla amet facilisis erat ornare
+              ac tincidunt turpis erat
+            </p>
+          </div>
+
+          <!-- card #6 -->
+          <div class="card">
+            <h2 class="bg-red">Flexible</h2>
+            <p>
+              Eu consequat mauris fermentum phasellus vitae ipsum dignissim id lectus turpis eget ac
+              viverra at porttitor a diam
+            </p>
           </div>
         </div>
-        <div class="split text-serif">
-          <p class="copywrite">&copy; 2020 Acme. All rights reserved</p>
-          <ul class="footer-social">
-            <li><a href="#">Yt</a></li>
-            <li><a href="#">Tw</a></li>
-            <li><a href="#">Fb</a></li>
-            <li><a href="# ">Li</a></li>
-          </ul>
-        </div>
       </div>
-    </footer>
+    </main>
   </body>
 </html>

@@ -10,6 +10,7 @@
   --clr-neutral-300: rgba(240, 242, 244);
 
   --fs-title: 3rem;
+  --fs-title-sm: 2rem;
   --fs-base: 1rem;
 }
 
@@ -33,8 +34,14 @@ main {
 
 h1 {
   padding: 0.5rem 0;
-  font-size: var(--fs-title);
+  font-size: var(--fs-title-sm);
   font-weight: 700;
+}
+
+@media (min-width: 40em) {
+  h1 {
+    font-size: var(--fs-title);
+  }
 }
 
 .container {

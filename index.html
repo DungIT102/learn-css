@@ -3,65 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Demystified | Challenge #2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Burger</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="cta">
-      <h2 class="section-title">A catchy headline</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna. Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
-      </p>
-      <p>
-        <a href="#" class="btn btn-primary">Click me </a>
-        <a href="#" class="btn btn-secondary">Click me </a>
-        <a href="#" class="btn btn-outline">Click me</a>
-      </p>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="icon logo" />
+      </div>
+
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="banner-quote">
+      <div class="text-white">
+        <div class="banner-content">
+          <h1>A cracking burger</h1>
+          <p>A juicy, delicious basic beef burger recipe</p>
+        </div>
+        <p class="quote bg-accent">
+          There's nothing better than a homemade burger. Everyone loves them, they're easy to make
+          and, if made with quality, fresh ingredients (and not over laden with greasy stuff), they
+          certainly don't have to be unhealthy, especially if served with a salad. Once you've
+          mastered this tasty basic recipe, you can make it your own with different herbs, spices
+          and toppings. The sky's the limit – that's why cooking is so exciting.
+        </p>
+      </div>
     </div>
-    <div class="cta">
-      <h2 class="section-title">A catchy headline</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna. Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
-      </p>
-      <p>
-        <a href="#" class="btn btn-primary">Click me</a>
-        <a href="#" class="btn btn-secondary">Click me</a>
-        <a href="#" class="btn btn-outline">Click me</a>
-      </p>
-    </div>
-    <div class="cta bg-accent">
-      <h2 class="section-title">A catchy headline</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna. Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
-      </p>
-      <p>
-        <a href="#" class="btn btn-primary">Click me</a>
-        <a href="#" class="btn btn-secondary">Click me</a>
-        <a href="#" class="btn btn-outline">Click me</a>
-      </p>
-    </div>
-    <div class="cta bg-dark">
-      <h2 class="section-title">A catchy headline</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna. Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
-      </p>
-      <p>
-        <a href="#" class="btn btn-primary">Click me</a>
-        <a href="#" class="btn btn-secondary">Click me</a>
-        <a href="#" class="btn btn-outline">Click me</a>
-      </p>
-    </div>
+
+    <main class="bg-white">
+      <section>
+        <h2 class="text-accent">Ingredients</h2>
+        <ul>
+          <li>12 Jacob's cream crackers</li>
+          <li>8 sprigs of fresh flat-leaf parsley</li>
+          <li>500 g quality minced beef</li>
+          <li>1 large free-range egg</li>
+          <li>sea salt</li>
+          <li>freshly ground black pepper</li>
+          <li>olive oil</li>
+          <li>1 cos or round lettuce</li>
+          <li>3 tomatoes</li>
+          <li>1 red onion</li>
+          <li>3-4 gherkins</li>
+          <li>6 good-quality or fresh burger buns</li>
+          <li>6 slices Cheddar cheese, optional</li>
+          <li>2 heaped tablespoons Dijon mustard, optional</li>
+        </ul>
+      </section>
+
+      <div class="col-01">
+        <section>
+          <h2 class="text-accent">To make your burger:</h2>
+          <ol>
+            <li>
+              Wrap the crackers in a tea towel and smash up until fine, breaking up any big bits
+              with your hands, and put them into a large bowl.
+            </li>
+            <li>Finely chop the parsley, including the stalks.</li>
+            <li>Add the parsley, mustard, if using, and minced beef to the bowl.</li>
+            <li>Crack in the egg and add a good pinch of salt and pepper.</li>
+            <li>With clean hands, scrunch and mix everything up well.</li>
+            <li>
+              Divide into 6 and pat and mould each piece into a roundish shape about 2cm thick.
+            </li>
+            <li>
+              Drizzle the burgers with oil, put on a plate, cover and place in the fridge until
+              needed (this helps them to firm up).
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 class="text-accent">To cook your burger:</h2>
+          <ol>
+            <li>
+              Preheat a large griddle or frying pan for about 4 minutes on a high heat. Turn the
+              heat down to medium.
+            </li>
+            <li>
+              Place the burgers on the griddle or in the pan and use a spatula to lightly press down
+              on them, making sure the burger is in full contact.
+            </li>
+            <li>
+              Cook them to your liking for 3 or 4 minutes on each side – you may need to cook them
+              in two batches.
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 class="text-accent">To serve your burger:</h2>
+          <ol>
+            <li>
+              Wash and dry a few small lettuce leaves, tearing up the larger ones. Slice the
+              tomatoes.
+            </li>
+            <li>
+              Peel and finely slice the red onion. Slice the gherkins lengthwise as finely as you
+              can. Place all this on a platter and put in the middle of the table with plates,
+              cutlery, ketchup and drinks.
+            </li>
+            <li>
+              Remove your burgers to another plate and carefully wipe your pan or griddle clean with
+              kitchen paper.
+            </li>
+            <li>
+              Halve your burger buns and lightly toast them on the griddle or in the pan. Also great
+              with a chopped salad.
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-accent text-white">
+      <p>Source: http://www.jamieoliver.com/recipes/beef-recipes/a-cracking-burger/</p>
+    </footer>
   </body>
 </html>

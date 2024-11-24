@@ -1,0 +1,95 @@
+:root {
+  --clr-neutral-100: #fff;
+  --clr-neutral-400: #474554;
+  --clr-neutral-900: #000;
+  --clr-primary-200: #bac9e8;
+  --clr-primary-300: #3c7dff;
+  --clr-primary-400: #0044cc;
+  --clr-primary-500: #0c1832;
+
+  --ff-base: 'IBM Plex Serif', serif;
+  --ff-accent: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.0625rem;
+  font-family: var(--ff-base);
+  line-height: 1.65;
+  background-color: var(--clr-primary-200);
+  padding: 4rem;
+}
+
+.section-title {
+  font-family: var(--ff-accent);
+  font-size: 1.75rem;
+}
+
+.cta {
+  --color: var(--clr-neutral-900);
+  --bg: var(--clr-neutral-100);
+
+  max-width: 40rem;
+  margin: 10rem auto;
+  padding: 5rem;
+  border-radius: 2.5rem;
+
+  color: var(--color);
+  background: var(--bg);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+
+  font-family: var(--ff-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: var(--bg-primary, var(--clr-primary-400));
+  color: var(--clr-primary, var(--clr-neutral-100));
+}
+
+.btn-secondary {
+  background: var(--bg-secondary, var(--clr-neutral-400));
+  color: var(--clr-secondary, var(--clr-neutral-100));
+}
+
+.btn-outline {
+  color: var(--clr-outline, var(--clr-primary-400));
+  padding: calc(0.625rem-2px) calc(1.5rem-2px);
+  border: 2px solid var(--clr-border, var(--clr-primary-400));
+}
+
+.bg-accent {
+  --color: var(--clr-neutral-100);
+  --bg: var(--clr-primary-400);
+  --clr-primary: var(--clr-primary-300);
+  --bg-primary: var(--clr-neutral-100);
+  --clr-secondary: var(--clr-neutral-100);
+  --bg-secondary: var(--clr-neutral-900);
+  --clr-outline: var(--clr-neutral-100);
+  --clr-border: var(--clr-neutral-100);
+}
+
+.bg-dark {
+  --color: var(--clr-neutral-100);
+  --bg: var(--clr-primary-500);
+  --clr-secondary: var(--clr-primary-300);
+  --bg-secondary: var(--clr-neutral-100);
+  --clr-outline: var(--clr-neutral-100);
+  --clr-border: var(--clr-neutral-100);
+}

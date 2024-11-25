@@ -23,6 +23,13 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
+
+  /* center demo content on the screen */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Make images easier to work with */
@@ -38,50 +45,4 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
-}
-
-header {
-  background: black;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  width: 10rem;
-  margin-bottom: 1rem;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 1em;
-}
-
-nav a {
-  color: inherit;
-}
-
-nav a:hover,
-nav a:focus {
-  color: yellowgreen;
-}
-
-.card {
-  border: 2px solid black;
-  padding: 1.5em;
-  margin-bottom: 1em;
 }

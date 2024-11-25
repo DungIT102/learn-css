@@ -27,13 +27,15 @@ aside {
   padding: 1em;
 }
 
-.grid-ish {
+.albatross {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
 }
 
-.grid-ish > * {
+.albatross > * {
   flex-grow: 1;
-  flex-basis: 15rem;
+
+  /* research use them instead of media queries */
+  flex-basis: calc(calc(40rem - 100%) * 999);
 }

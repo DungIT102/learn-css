@@ -19,6 +19,16 @@ header {
   flex-grow: 1;
 }
 
+main {
+  flex-basis: 60%;
+  padding: 2em;
+  flex-grow: 9999;
+}
+
+main > * {
+  max-width: 60rem;
+}
+
 /* add fixed positioning */
 
 header > img {
@@ -50,14 +60,4 @@ header > nav > ul {
     flex-direction: row;
     gap: 1em;
   }
-}
-
-main {
-  flex-basis: 60%;
-  padding: 2em;
-  flex-grow: 9999;
-}
-
-main > * {
-  max-width: 60rem;
 }

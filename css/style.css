@@ -1,22 +1,28 @@
+header {
+  margin-bottom: 3rem;
+}
+
 .container {
-  padding: 0 2rem;
-  max-width: 65rem;
+  padding: 0 2em;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
-.even-columns {
+.content-sidebar {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 4rem;
 }
 
-@media (min-width: 60em) {
-  .even-columns {
-    flex-direction: row;
-  }
+main {
+  flex-grow: 9999;
+  flex-basis: 50%;
 }
 
-.even-columns > * {
-  flex-basis: 100%;
-  border: 2px solid black;
+aside {
+  flex-basis: 20rem;
+  flex-grow: 1;
+  border: 4px solid black;
+  padding: 1em;
 }
